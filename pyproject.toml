@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "github-ci-testing"
+version = "0.1.0"
+description = ""
+authors = ["Youngkwang Yang <immutable000@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2"
+django-import-export = "^4.1.1"
+pydantic = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
