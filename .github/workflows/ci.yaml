@@ -3,8 +3,10 @@ name: Django CI
 on:
   push:
     branches:
-      - master
-
+      - "test-branch"
+  pull_request:
+    branches:
+      - "master" 
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -31,6 +33,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests
+      - name: Run tests2222
         run: |
           python manage.py test
